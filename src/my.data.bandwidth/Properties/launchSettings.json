@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "My.Data.Bandwidth": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}
