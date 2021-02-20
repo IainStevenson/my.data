@@ -19,18 +19,14 @@ namespace My.Data.Bandwidth.Handlers
             if (!result.IsError)
             {
                 result.TimeStamp =  result.TimeStamp.AddSeconds(DATAPOINT_INTERVAL_SECONDS); // await the next interval
-            }
-            else
-            {
-                result.TimeStamp = DateTimeOffset.UtcNow; // GO again now
-            }
 
-            while (DateTime.UtcNow.Ticks < result.TimeStamp.Ticks)  // until time exceeded
-            {
-                Thread.Sleep(ONE_SECOND_MILLSECONDS); // have a wee kip
+                while (DateTime.UtcNow.Ticks < result.TimeStamp.Ticks)  // until time exceeded
+                {
+                    Thread.Sleep(ONE_SECOND_MILLSECONDS); // have a wee kip
+                }
+                
             }
             return Task.FromResult(0);
-        }
-    
+        }    
     }
 }

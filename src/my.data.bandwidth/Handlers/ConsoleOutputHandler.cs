@@ -17,7 +17,7 @@ namespace My.Data.Bandwidth.Handlers
             if (result.IsError)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine($"{timeString} *** Error Data: [{result.ErrorOutput}]");
+                Console.WriteLine($"{timeString} ***  {result.ErrorMessage}: [{result.ErrorOutput}]");
                 Console.ForegroundColor = ConsoleColor.White;
             }
             else
