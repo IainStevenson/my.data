@@ -3,14 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "my.data.testing", "my.data.testing\my.data.testing.csproj", "{A7F5F3CC-6DA6-4B33-918E-EC2488922815}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "my.data.testing", "my.data.testing\my.data.testing.csproj", "{A7F5F3CC-6DA6-4B33-918E-EC2488922815}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{232C230C-57FE-4B7C-BEAC-D3045840375F}"
 	ProjectSection(SolutionItems) = preProject
-		..\..\..\my.data\.gitignore = ..\..\..\my.data\.gitignore
-		..\..\..\my.data\LICENSE = ..\..\..\my.data\LICENSE
-		overall.requirements.md = overall.requirements.md
-		..\..\..\my.data\README.md = ..\..\..\my.data\README.md
+		..\.gitignore = ..\.gitignore
+		..\LICENSE = ..\LICENSE
+		..\overall.requirements.md = ..\overall.requirements.md
+		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{94F08D98-06B7-47A9-9BE6-42936DF4AF43}"
