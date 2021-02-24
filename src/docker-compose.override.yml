@@ -13,3 +13,5 @@ services:
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
   my.data.bandwidth:
 
+
+  # Copy speedtest-cli.json to root/.config/ookla/speedtest-cli.json

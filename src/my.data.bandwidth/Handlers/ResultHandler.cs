@@ -8,7 +8,7 @@ namespace My.Data.Bandwidth.Handlers
     public class ResultHandler<T> where T: ISpeedTestData
     {
         private static int ONE_SECOND_MILLSECONDS = 1000;
-        private static int DATAPOINT_INTERVAL_SECONDS = 300;
+        private static int DATAPOINT_INTERVAL_SECONDS = 120;
         /// <summary>
         /// Processes the result and determines the next start time then waits until that has expired.
         /// </summary>

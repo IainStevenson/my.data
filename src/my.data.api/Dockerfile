@@ -19,4 +19,5 @@ RUN dotnet publish "my.data.api.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "my.data.api.dll"]
+# ENTRYPOINT ["dotnet", "my.data.api.dll"]
+ENTRYPOINT ["bash", "/usr/local/bin/bash"]
